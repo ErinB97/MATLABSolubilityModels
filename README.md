@@ -1,2 +1,10 @@
 # MATLAB Solubility Models
-MEng researcg project, assessing the performance of various co-solvent solubility models. MATLAB tool to run solubility predictions/import data and perform analysis on results.
+MEng research project: used to compare the performance of different co-solvency solubility models
+
+## Models: (p : predictive, e : empirical)
+- Log-Linear (e)
+- Predictive Log-Linear (p)
+- Jouyban-Acree (e)
+- General Single Model / GSM (e)
+- NRTL (e)
+- UNIQUAC (e)
