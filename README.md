@@ -14,7 +14,7 @@ p : predictive, e : empirical)
 
 # Documentation
 
-# Folders
+## Folders
 The folder directory separates out solubility data from MATLAB files, and then the MATLAB scripts are then further grouped in sub-folders based on their purpose.
 
 - data_files : stores solubility data
@@ -26,12 +26,12 @@ The folder directory separates out solubility data from MATLAB files, and then t
   - _other_funs_: functions that do other jobs
 
 
-# Solubility Data
+## Solubility Data
 
-# Using the models
+## Using the models
 
-## Modelling Tool
+### Modelling Tool
 
-## Modelling Script
+### Modelling Script
 
-## Within other scripts
+### Within other scripts
