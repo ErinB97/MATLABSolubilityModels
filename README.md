@@ -45,7 +45,16 @@ This model is denoted in the code by _GSM_
 
 [The NRTL Model](https://en.wikipedia.org/wiki/Non-random_two-liquid_model) is a popular activity coefficient model, in this project I have employed it in an empirical rather than a predictive fashion. Currently there is a gap in (publicly available) research for published generic NRTL BIPs (binary interaction parameters) for pharmacuetical compounds in co-solvent systems. Using this model, a series of solubility data points is entered, and an optimisation routine determines BIPs for the system. When using the model be sure to adjust the non-randomness factor alpha to a value between 0.1 & 0.5 for the best results.
 
+This model is denoted in the code by _NRTL_ 
 
+**UNIQUAC Model:**
+
+[The UNIQUAC Model](https://en.wikipedia.org/wiki/UNIQUAC) is also a commonly used activity coefficient model, that likewise lacks available published pharamcuetical & co-solvent BIP data. UNIQUAC functionality in this project is the same to that as NRTL. However, the UNIQUAC model requires the group contribution data for each component. For this project I made use of the (Dortmund Data Bank online UNIFAC group assignment tool)[http://www.ddbst.com/unifacga.html] for this project. Unfortunately becusae this is the regular UNIQUAC model electrolytes and some drugs with complex structures are not supported.
+
+
+This model is denoted in the code by _UNIQUAC_ 
+
+**Further reading:** Significant advancements have been made to develop the NRTL & UNIQUAC models to cover their shortcomings. Some of these models include eNRTL, NRTL-SAC, eNRTL-SAC, Modified UNIQUAC, and eUNIQUAC to name just a few. If the models in this project do not fit your need, I would reccomend giving these models a search.
 
 # How To Use
 
