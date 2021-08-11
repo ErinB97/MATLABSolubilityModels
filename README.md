@@ -39,6 +39,14 @@ A simplification of the Jouyban-Acree model which requires only the solubility d
 This model is denoted in the code by _GSM_ 
 
 
+**Further reading:** All of the above four models are discussed in more detail in the paper [Review of the Cosolvency Models for Predicting Drug Solubility in Solvent Mixtures: An Update](https://journals.library.ualberta.ca/jpps/index.php/JPPS/article/view/30611) by A. Jouyban. I would reccomend reading this review if you are interested: in cosolvency modelling in general, the algebraic form of the models, or wish to know the background of the above models.
+
+**NRTL Model:**
+
+[The NRTL Model](https://en.wikipedia.org/wiki/Non-random_two-liquid_model) is a popular activity coefficient model, in this project I have employed it in an empirical rather than a predictive fashion. Currently there is a gap in (publicly available) research for published generic NRTL BIPs (binary interaction parameters) for pharmacuetical compounds in co-solvent systems. Using this model, a series of solubility data points is entered, and an optimisation routine determines BIPs for the system. When using the model be sure to adjust the non-randomness factor alpha to a value between 0.1 & 0.5 for the best results.
+
+
+
 # How To Use
 
 ## Folders
