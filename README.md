@@ -1,6 +1,6 @@
 # MATLAB Solubility Models
-MEng research project: used to compare the performance of different co-solvency solubility models. 
-These models can be used to predict the solubility of co-solvent systems.
+For my final year MEng research project I worked within the University's Skin Research Group (ChemEng Surrey) to compare the performance of different co-solvency solubility models. For this project I collected different pharamcuetical cosolvency datasets and assed the model performance on each, I did so by implementing the models within MATLAB (the code you are presented with), and finally I wrote my findings in a research paper as my final piece of assessment. 
+
 
 Included models:
 
@@ -49,7 +49,7 @@ This model is denoted in the code by _NRTL_
 
 **UNIQUAC Model:**
 
-[The UNIQUAC Model](https://en.wikipedia.org/wiki/UNIQUAC) is also a commonly used activity coefficient model, that likewise lacks available published pharamcuetical & co-solvent BIP data. UNIQUAC functionality in this project is the same to that as NRTL. However, the UNIQUAC model requires the group contribution data for each component. For this project I made use of the (Dortmund Data Bank online UNIFAC group assignment tool)[http://www.ddbst.com/unifacga.html] for this project. Unfortunately becusae this is the regular UNIQUAC model electrolytes and some drugs with complex structures are not supported.
+[The UNIQUAC Model](https://en.wikipedia.org/wiki/UNIQUAC) is also a commonly used activity coefficient model, that likewise lacks available published pharamcuetical & co-solvent BIP data. UNIQUAC functionality in this project is the same to that as NRTL. However, the UNIQUAC model requires the group contribution data for each component. For this project I made use of the [Dortmund Data Bank online UNIFAC group assignment tool](http://www.ddbst.com/unifacga.html) for this project. Unfortunately becusae this is the regular UNIQUAC model electrolytes and some drugs with complex structures are not supported.
 
 
 This model is denoted in the code by _UNIQUAC_ 
