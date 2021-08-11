@@ -2,9 +2,9 @@
 MEng research project: used to compare the performance of different co-solvency solubility models. 
 These models can be used to predict the solubility of co-solvent systems.
 
-The current models that are supported are:
+Included models:
 
-p : predictive, e : empirical)
+(p - predictive, e : empirical)
 - Log-Linear (e)
 - Predictive Log-Linear (p)
 - Jouyban-Acree (e)
@@ -27,6 +27,7 @@ The folder directory separates out solubility data from MATLAB files, and then t
 
 
 ## Solubility Data
+
 
 ## Using the models
 
