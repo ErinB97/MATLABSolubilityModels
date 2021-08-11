@@ -14,15 +14,29 @@ Included models:
 
 # Notes on the Solubility Models
 
-**Log-Linear**
+**Log-Linear:**
+
 The Log-Linear model of Yalkowsky is a simple to use model that represents ideal cosolvent systems (i.e. no solubility peaks with solvent mixtures). Needs: Solubility data in neat solvent and co-solvent. 
+
 This model is denoted in the code by _LL_IMM_ 
 
-**Predictive Log-Linear**
-An extenstion of the log-linear model that replaces co-solvent solubility with the co-solvent's solubization power found from constants from literature and the logKow value for the solute. Values for the constants for common co-solvents can be found in A.Jouyban's 'Handbook of Solubility Data for Pharmacueticals'  Table 1.11 on page 33 of the 2010 edition. (This book is also a good source for solubility data to try out the models with)
+**Predictive Log-Linear:**
 
+An extenstion of the log-linear model that replaces co-solvent solubility with the co-solvent's solubization power found from constants from literature and the logKow value for the solute. Values for the constants for common co-solvents can be found in A.Jouyban's 'Handbook of Solubility Data for Pharmacueticals'  Table 1.11 on page 33 of the 2010 edition. (This book is also a good source for solubility data to try out the models with). This model is often times _very_ innacurate (see my results) and I would not reccomend using it beyond testing / initial studies.
 
+This model is denoted in the code by _LL_SIG_
 
+**Jouyban-Acree Model:**
+
+A straight-forward and highly effective correlative model that is more than adequate for modelling both ideal and non-ideal solubility systems. To use this model, the solubility data requires neat co-solvent solubility data points ("end points") and a series of data-points in-between. (See the _SolubilityData - Propanol example.xlxs_  for an example of what this looks like.) Personally, unless you specifically need to estimate the activity co-effictients of your components I would reccomend using this model.
+
+This model is denoted in the code by _JA_REG_ 
+
+**General Single Model:**
+
+A simplification of the Jouyban-Acree model which requires only the solubility data in one neat co-solvent and a data series to correlate from. Yields very similar results to the Jouyban-Acree model.
+
+This model is denoted in the code by _GSM_ 
 
 
 # How To Use
@@ -42,7 +56,7 @@ An extenstion of the log-linear model that replaces co-solvent solubility with t
 
 To perform correlation on a data-set the solubility data must be formatted in the same way as shown with the data in _SolubilityData - Propanol example.xlxs_ 
 
-**Note** For the NRTL & UNIQUAC models, the solubility data must be prepared as a ternary mole fraction system for both the solvent fractions and unit of solubility for truly representative modelling.
+**Note:** For the NRTL & UNIQUAC models, the solubility data must be prepared as a ternary mole fraction system for both the solvent fractions and unit of solubility for truly representative modelling.
 
 ## Using the models
 To interpolate existing solubility data with the available models, the UI based _SolModelTool.mlapp_ is the easiest to use. 
