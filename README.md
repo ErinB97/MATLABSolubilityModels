@@ -1,5 +1,5 @@
 # MATLAB Solubility Models
-For my final year MEng research project I worked within the University's Skin Research Group (ChemEng Surrey) to compare the performance of different co-solvency solubility models. For this project I collected different pharamcuetical cosolvency datasets and assed the model performance on each, I did so by implementing the models within MATLAB (the code you are presented with), and finally I wrote my findings in a research paper as my final piece of assessment [which you can read here](https://github.com/ErinB97/MATLABSolubilityModels/blob/main/CosolvencyModelUGResearchPaper.pdf).
+For my final year MEng research project I worked within the University's Skin Research Group (ChemEng Surrey) to compare the performance of different co-solvency solubility models. For this project I collected different pharamcuetical cosolvency datasets and assessed the model performance on each, I did so by implementing the models within MATLAB (the code you are presented with), and finally I wrote my findings in a research paper as my final piece of assessment [which you can read here](https://github.com/ErinB97/MATLABSolubilityModels/blob/main/CosolvencyModelUGResearchPaper.pdf).
 
 
 Included models (p - predictive, e : empirical):
